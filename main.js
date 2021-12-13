@@ -7,8 +7,21 @@ const routes = {
     '/details': Detail
 }
 
-var app = new Vue({
+new Vue({
     el: '#app',
+    data: {
+        currentRoute: window.location.pathname
+    },
+    computed: {
+        ViewComponent() {
+            return routes[this.currentRoute] || NotFound
+        }
+    },
+    render (h) { return h(this.ViewComponent)}
+})
+
+var app = new Vue({
+    el: '#app2',
     data: {
         projects: [
             { 
