@@ -14,27 +14,25 @@
 </head>
 <body>
     
-    <div id="app2" class="container">
-        <div class="row">
-          <div class="col">
-            <p>Column {{message1}}</p>
-          </div>
-          <div class="col">
-            <p>Column {{message2}}</p>
-          </div>
-          <div class="col">
-            <p>Column {{message3}}</p>
-          </div>
-        </div>
-      </div>
+	<div id="app">
+		<div class="intro">
+			<h1>Christopher Corbett Developer Portfolio</h1>
+			<p>From Android and iOS to Angular and Vue here are my portfolio projects</p>
+		</div>
 
-    <div id="app3" class="container">
-        <div class="row">
-            <div v-for="todo in todos" class="col">
-                <p>{{ todo.text }}</p>
-            </div>
-        </div>
-    </div>
+		<div class="container">
+			<div v-for="project in projects" class="row">
+				<div class="col">
+					<a href="">
+						<div class="item" >
+							<h3>{{ project.title }}</h3>
+							<img v-if="project.image" v-bind:src="project.image" alt="Project image">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
 <!-- Vue code and Bootstrap scripts -->
 <script src="main.js"></script>

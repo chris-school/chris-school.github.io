@@ -1,5 +1,35 @@
-p {
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: linear-gradient(#e66465, #9198e5);
+}
+
+.intro {
+  padding: 2em;
+}
+
+.row .col {
+  margin: 1em;
+  padding: 1em;
+  border: 5px solid gainsboro;
+  border-radius: 2em;
+  background-color: azure;
+}
+.row .col h3 {
+  margin: 1em;
   text-align: center;
+}
+.row .col a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.row .col img {
+  border-radius: 2em;
+  width: 100%;
+  padding: 0.5em;
+  filter: drop-shadow(0.5em 0.5em 0.5em #111);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,19 +1,41 @@
-var app2 = new Vue({
-    el: '#app2',
-    data: {
-        message1: "Message 1",
-        message2: "Message 2",
-        message3: "Message 3"
-    }
-})
+const NotFound = { template: '<p>Page not found</p>' }
+const Home = { template: '<p>Home page</p>' }
+const Detail = { template: '<p>Detail page</p>' }
 
-var app3 = new Vue({
-    el: '#app3',
+const routes = {
+    '/': Home,
+    '/details': Detail
+}
+
+var app = new Vue({
+    el: '#app',
     data: {
-        todos: [
-            { text: "Todo 1" },
-            { text: "Here this text is different" },
-            { text: "Todo 3" }
+        projects: [
+            { 
+                title: "Portfolio Website",
+                image: 'images/portfolio_screenshot_3.png',
+                description: "Here is a description"
+            },
+            { 
+                title: "Placeholder",
+                description: "Here is a description"
+            },
+            { 
+                title: "Placeholder",
+                description: "Here is a description"
+            },
+            { 
+                title: "Placeholder",
+                description: "Here is a description"
+            },
+            { 
+                title: "Placeholder",
+                description: "Here is a description"
+            },
+            { 
+                title: "Placeholder",
+                description: "Here is a description"
+            }
         ]
     }
 })
