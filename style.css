@@ -21,9 +21,11 @@ body {
   margin: 1em;
   text-align: center;
 }
-.row .col a {
-  color: inherit;
-  text-decoration: inherit;
+.row .col hr {
+  margin-top: 2em;
+}
+.row .col .info-btn {
+  margin: 1em;
 }
 .row .col img {
   border-radius: 2em;

@@ -23,12 +23,19 @@
 		<div class="container">
 			<div v-for="project in projects" class="row">
 				<div class="col">
-					<a href="">
-						<div class="item" >
-							<h3>{{ project.title }}</h3>
-							<img v-if="project.image" v-bind:src="project.image" alt="Project image">
-						</div>
-					</a>
+					<portfolio-project
+						v-bind:project="project"
+						v-bind:key="project.id"
+					></portfolio-project>
+
+					<!-- <h3>{{ project.title }}</h3>
+					<img v-if="project.image" v-bind:src="project.image" alt="Project image">
+
+					<hr>
+
+					<div class="d-grid gap-2 col-6 mx-auto info-btn">
+						<button v-on:click="toggleInfo" class="btn btn-dark" type="button">{{ button.text }}</button>
+					</div> -->
 				</div>
 			</div>
 		</div>

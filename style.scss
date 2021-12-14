@@ -27,10 +27,12 @@ body {
             text-align: center;
         }
 
-        a {
-            // Remove link styling from the project title
-            color: inherit;
-            text-decoration: inherit;
+        hr {
+            margin-top: 2em;
+        }
+
+        .info-btn {
+            margin: 1em;
         }
 
         img {
