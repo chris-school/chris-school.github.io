@@ -21,8 +21,11 @@ body {
   margin: 1em;
   text-align: center;
 }
-.row .col hr {
-  margin-top: 2em;
+.row .col p {
+  padding: 2em;
+}
+.row .col a {
+  padding-left: 2em;
 }
 .row .col .info-btn {
   margin: 1em;

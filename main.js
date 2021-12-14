@@ -8,7 +8,7 @@ Vue.component('portfolio-project', {
 
             <p v-if="!seen">{{project.description}}</p>
 
-            <hr>
+            <a v-if="!seen && project.github" v-bind:href="project.github">Github link</a>
 
             <div class="d-grid gap-2 col-6 mx-auto info-btn">
                 <button v-on:click="toggleInfo" class="btn btn-dark" type="button">{{this.button.text}}</button>
@@ -41,7 +41,8 @@ var app = new Vue({
                 id: 0,
                 title: "Portfolio Website",
                 image: 'images/portfolio_screenshot_3.png',
-                description: "Here is a different description."
+                description: "To create this website I learned the basics of Vue.js and used sass for the styling as I dislike css quite a bit.",
+                github: "https://github.com/chris-school/chris-school.github.io"
             },
             { 
                 id: 1,
